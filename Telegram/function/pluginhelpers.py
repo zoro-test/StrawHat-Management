@@ -15,7 +15,7 @@ from pyrogram.types import Chat, Message, User
 
 from Telegram import OWNER_ID
 from Telegram import MESSAGE_DUMP
-SUPPORT_CHAT = "AnieSupports"
+SUPPORT_CHAT = "StrawHat_Support"
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
