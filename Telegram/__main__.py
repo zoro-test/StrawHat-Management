@@ -164,13 +164,13 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/Telegram",
+                                url="https://github.com/",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url=f'https://t.me/{SUPPORT}',
+                                url=f'https://t.me/StrawHat_Support',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -178,7 +178,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url=f"https://t.me/{CHANNEL}",
+                                url=f"https://t.me/StrawHat_Bots",
                             ),
                         ],
                     ]
@@ -260,13 +260,13 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/Telegram",
+                                url="https://github.com/",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url=f'https://t.me/{SUPPORT}',
+                                url=f'https://t.me/StrawHat_Support',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -274,7 +274,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url=f"https://t.me/{CHANNEL}",
+                                url=f"https://t.me/StrawHat_Bots",
                             ),
                         ],
                     ]
