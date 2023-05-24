@@ -1,5 +1,5 @@
 import html
-from typing import Optional
+from typing import Optnal
 
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
@@ -335,34 +335,4 @@ def invite(update: Update, context: CallbackContext):
         bot_member = chat.get_member(bot.id)
         if bot_member.can_invite_users:
             invitelink = bot.exportChatInviteLink(chat.id)
-            update.effective_message.reply_text(invitelink)
-        else:
-            update.effective_message.reply_text(
-                "I don't have access to the invite link, try changing my permissions!"
-            )
-    else:
-        update.effective_message.reply_text(
-            "I can only give you invite links for supergroups and channels, sorry!"
-        )
-
-
-@zaid(command=["admin", "admins", "staff"])
-def adminlist(update: Update, _):
-    administrators = update.effective_chat.get_administrators()
-    text = "Admins in *{}*:".format(update.effective_chat.title or "this chat")
-    for admin in administrators:
-        if not admin.is_anonymous:
-            user = admin.user
-            name = user.mention_markdown()
-            text += "\n -> {} • `{}` • `{}` • `{}`".format(name, user.id, admin.status,
-                                                           escape_markdown(
-                                                               admin.custom_title) if admin.custom_title else "")
-
-    update.effective_message.reply_text(text, parse_mode=ParseMode.MARKDOWN)
-
-
-def get_help(chat):
-    return gs(chat, "admin_help")
-
-
-__mod_name__ = "Admin"
+            update.effective_message.reply_text(invitelink) are 
